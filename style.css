@@ -23,8 +23,8 @@ a{
 }
 
 /*utilities*/
-.container{
-    max-width: 1200px;
+.container-xl{
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -60,7 +60,7 @@ a{
     color: white;
 }
 
-/*header*/
+/*header-bar*/
 #header-bar{
     position: fixed;
     top: 0;
@@ -107,4 +107,33 @@ a{
 #header-bar .btn{
     align-self: center;
     justify-content:center ;
+}
+
+/*header-content*/
+#header-content *{
+    border: 1px dashed red;
+}
+
+.hdr-cont-box{
+    width: 100%;
+    min-height: 550px;
+}
+
+.hdr-title{
+    width: 100%;
+    min-height: 150px;
+}
+
+.hdr-spot{
+    width: 100%;
+}
+
+.hdr-text{
+    width: 35%;
+    min-height: 400px;
+}
+
+.hdr-jumbo{
+    width: 65%;
+    min-height: 400px;
 }
