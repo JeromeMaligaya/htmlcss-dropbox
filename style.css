@@ -7,7 +7,12 @@
 
 /*generics*/
 body{
-    font-family: sans-serif;
+    font-family: "open sans", sans-serif;
+}
+
+img{
+    max-width: 100%;
+    display: block;
 }
 
 /*utilities*/
