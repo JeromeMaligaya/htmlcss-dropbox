@@ -11,7 +11,7 @@ body{
     padding-top: 60px;
 }
 
-img{
+img:not(.hdr-jumbo img){
     max-width: 100%;
     display: block;
 }
@@ -24,7 +24,7 @@ a{
 
 /*utilities*/
 .container-xl{
-    max-width: 1100px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -36,8 +36,13 @@ a{
 }
 
 .btn.btn-s{
-    width: 50px;
-    height: 25px;
+    height: 30px;
+    width: 60px;
+}
+
+.btn.btn-xl{
+    height: 30px;
+    width:180px;
 }
 
 /*utilities-position*/
@@ -51,9 +56,21 @@ a{
     align-items: center;
 }
 
+/*utilities-sizing*/
+.fnt-s{
+    font-size: 15px;
+}
 /*utilities-position*/
 .bg-blue{
-    background-color: blue;
+    background-color: rgb(0, 82, 246);
+}
+
+.bg-white{
+    background-color: #fff;
+}
+
+.bg-azure{
+    background-color: rgb(102, 155, 208);
 }
 
 .clr-white{
@@ -65,22 +82,23 @@ a{
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
     justify-content: space-between;
     align-items: center;  
-    padding: 0 10px;
-    height: 45px;
+    padding: 0 15px;
+    height: 60px;
     width: 100%;
 }
 
 #header-bar a{
     display: flex;
     align-items: center;
-    font-size: 10px;
+    font-size: 15px;
 }
 
 .hdr-nav-left, .hdr-nav-right{
-    gap: 10px;
-    width: 30%;
+    gap: 15px;
+    width: 36%;
     
 }
 .hdr-nav-left, .hdr-left-row-a{
@@ -92,12 +110,12 @@ a{
 }
  
 .hdr-left-row-a, .hdr-right-row-a{
-    width: 80%;
-    gap: 10px;
+    width: 85%;
+    gap: 25px;
 }
 
 .hdr-nav-left a:first-child{
-    width:22%;
+    width:30%;
 }
 
 .hdr-left-row-a a, .hdr-right-row-a a{
@@ -114,14 +132,20 @@ a{
     border: 1px dashed red;
 }
 
+.hdr-page{
+    padding: 60px 0;
+    height: calc(100vh - 173px);
+}
+
 .hdr-cont-box{
     width: 100%;
-    min-height: 550px;
+    position: relative;
 }
 
 .hdr-title{
     width: 100%;
-    min-height: 150px;
+   
+    font-size: 37px;
 }
 
 .hdr-spot{
@@ -129,11 +153,33 @@ a{
 }
 
 .hdr-text{
-    width: 35%;
-    min-height: 400px;
+    width: 30%;
+    flex-direction: column;
+    gap: 25px;
+    padding-top: 55px;
 }
 
 .hdr-jumbo{
-    width: 65%;
-    min-height: 400px;
+    position: relative;
+    bottom: -57px;
+    right: 15px;
+    width: 70%;
+}
+
+
+.hdr-jumbo img{
+    width: 120%;
+}
+
+.arrow-btm i{
+    position: absolute;
+    left:0;
+    bottom: 0;
+    font-size: 50px;
+    color: #000;
+}
+
+.white-space{
+    max-height: 146px;
+    width: 100%;
 }
