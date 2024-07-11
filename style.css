@@ -128,10 +128,6 @@ a{
 }
 
 /*header-content*/
-#header-content *{
-    border: 1px dashed red;
-}
-
 .hdr-page{
     padding: 60px 0;
     height: calc(100vh - 173px);
@@ -179,7 +175,7 @@ a{
     color: #000;
 }
 
-.white-space{
-    max-height: 146px;
-    width: 100%;
+/*main-section-bundles-prices*/
+#section-bundles-prices *{
+    border: 1px dashed red;
 }
