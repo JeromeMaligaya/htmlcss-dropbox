@@ -8,6 +8,7 @@
 /*generics*/
 body{
     font-family: "open sans", sans-serif;
+    padding-top: 60px;
 }
 
 img{
@@ -15,8 +16,95 @@ img{
     display: block;
 }
 
+a{
+    text-decoration: none;
+    display: block;
+  
+}
+
 /*utilities*/
 .container{
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.btn{
+    border-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn.btn-s{
+    width: 50px;
+    height: 25px;
+}
+
+/*utilities-position*/
+.flex{
+    display: flex;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*utilities-position*/
+.bg-blue{
+    background-color: blue;
+}
+
+.clr-white{
+    color: white;
+}
+
+/*header*/
+#header-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;  
+    padding: 0 10px;
+    height: 45px;
+    width: 100%;
+}
+
+#header-bar a{
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+}
+
+.hdr-nav-left, .hdr-nav-right{
+    gap: 10px;
+    width: 30%;
+    
+}
+.hdr-nav-left, .hdr-left-row-a{
+    justify-content: flex-start;
+}
+
+.hdr-nav-right, .hdr-right-row-a{
+    justify-content: flex-end;
+}
+ 
+.hdr-left-row-a, .hdr-right-row-a{
+    width: 80%;
+    gap: 10px;
+}
+
+.hdr-nav-left a:first-child{
+    width:22%;
+}
+
+.hdr-left-row-a a, .hdr-right-row-a a{
+    color: #000
+}
+
+#header-bar .btn{
+    align-self: center;
+    justify-content:center ;
 }
