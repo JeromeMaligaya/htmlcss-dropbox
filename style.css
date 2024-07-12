@@ -135,11 +135,9 @@ ul{
 }
 /*utilities-btn*/
 .btn{
-    border-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(0, 82, 246);
 }
 
 .btn.btn-s{
@@ -147,9 +145,23 @@ ul{
     width: 60px;
 }
 
+.btn.btn-l{
+    height: 35px;
+    width: 150px;
+}
 .btn.btn-xl{
     height: 40px;
     width: 200px;
+}
+
+.btn.btn-blue{
+    background-color: rgb(0, 82, 246);
+    border-color: rgb(0, 82, 246)
+}
+
+.btn.btn-white{
+    background-color: #fff;
+    border: 1px solid #000;
 }
 
 /*header-bar*/
@@ -321,33 +333,44 @@ ul{
  .borderline-prices{
     border: 1px solid #ccc;
     width: 20%;
- }
+}
 
 .benefit-list>ul li i{
     color: blue;
- }
+}
 
  .container-card-prices-xl .price-card{
    justify-content: space-between; 
    align-items: flex-start;
- }
+}
 
  .container-card-prices-xl p{
     width: 75%;
-  }
+}
 
-  /*section-partner*/
-  #section-partner{
+/*section-partner*/
+#section-partner{
     margin-top: 125px;
-  }
+}
 
-  .col60{
+#section-partner .row{
+    min-height: 400px;
+}
+
+#section-partner .col60{
     flex-basis: 60%;
-  }
+    background-image: url(img/partner.png);
+    background-size: cover;
+    background-position: center;
+}
 
-  .col40{
+#section-partner .col40{
     flex-basis: 40%;
-  }
+    justify-content: flex-start;
+    gap: 20px;
+    padding-top: 30px;
+    padding-left: 30px;
+}
 
  
 
