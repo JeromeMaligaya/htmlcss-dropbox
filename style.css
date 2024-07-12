@@ -163,6 +163,26 @@ ul{
     background-color: #fff;
     border: 1px solid #000;
 }
+/*layout*/
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row.cols3{
+    justify-content: space-between;
+    gap: 30px;
+    flex-basis: 100%;  
+}
+
+.col33{
+    flex-basis: calc((100% / 3) - (60px /3));
+}
+
+.cols3 .col33{
+    flex-grow: 1;
+}
+
 
 /*header-bar*/
 #header-bar{
@@ -284,28 +304,6 @@ ul{
     border: 1px solid #000;
 }
 
-#bundles-prices .row{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    height: 100%;
-}
-
-.row.cols3{
-    justify-content: space-between;
-    gap: 30px;
-    flex-basis: 100%;
-    
-}
-
-.col33{
-    flex-basis: calc((100% / 3) - (60px /3));
-}
-
-.cols3 .col33{
-    flex-grow: 1;
-}
-
 .card *{
     font-size: 15px;
 }
@@ -349,22 +347,22 @@ ul{
 }
 
 /*section-partner*/
-#section-partner{
+#partner{
     margin-top: 125px;
 }
 
-#section-partner .row{
+#partner .row{
     min-height: 400px;
 }
 
-#section-partner .col60{
+#partner .col60{
     flex-basis: 60%;
     background-image: url(img/partner.png);
     background-size: cover;
     background-position: center;
 }
 
-#section-partner .col40{
+#partner .col40{
     flex-basis: 40%;
     justify-content: flex-start;
     gap: 20px;
@@ -372,8 +370,7 @@ ul{
     padding-left: 30px;
 }
 
- 
-
-
-
-
+/*section-operations*/
+#operations{
+    margin-top: 125px;
+}
