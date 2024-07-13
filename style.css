@@ -199,19 +199,17 @@ ul{
     width: 100%;
 }
 
-#header-bar a{
+#header-bar *{
     display: flex;
     align-items: center;
     font-size: 15px;
+    
 }
 
 .hdr-nav-left, .hdr-nav-right{
     gap: 15px;
-    width: 36%;
+    width: 35%;
     
-}
-.hdr-nav-left, .hdr-left-row-a{
-    justify-content: flex-start;
 }
 
 .hdr-nav-right, .hdr-right-row-a{
@@ -223,18 +221,16 @@ ul{
     gap: 25px;
 }
 
-.hdr-nav-left a:first-child{
-    width:30%;
+.hdr-nav-left img{
+    width:90%;
 }
 
 .hdr-left-row-a a, .hdr-right-row-a a{
-    color: #000
-}
+    color: #000;
+    display: block;
+    }
 
-#header-bar .btn{
-    align-self: center;
-    justify-content:center ;
-}
+
 
 /*header-content*/
 .hdr-page{
