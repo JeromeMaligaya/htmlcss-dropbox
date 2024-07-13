@@ -11,7 +11,7 @@ body{
     padding-top: 60px;
 }
 
-img:not(.hdr-jumbo img){
+img{
     max-width: 100%;
     display: block;
 }
@@ -233,20 +233,17 @@ ul{
 
 
 /*header-content*/
-.hdr-page{
-    padding: 60px 0;
-    height: calc(100vh - 173px);
-}
 
 .hdr-cont-box{
     width: 100%;
     position: relative;
+    bottom: -60px;
 }
 
 .hdr-title{
     width: 100%;
-   
-    font-size: 37px;
+    font-size: 35px;
+    padding-bottom: 25px;
 }
 
 .hdr-spot{
@@ -257,25 +254,16 @@ ul{
     width: 30%;
     flex-direction: column;
     gap: 25px;
-    padding-top: 55px;
 }
 
 .hdr-jumbo{
-    position: relative;
-    bottom: -57px;
-    right: 15px;
     width: 70%;
-}
-
-
-.hdr-jumbo img{
-    width: 120%;
 }
 
 .arrow-btm i{
     position: absolute;
     left:0;
-    bottom: 0;
+    bottom: 80px;
     font-size: 50px;
     color: #000;
 }
