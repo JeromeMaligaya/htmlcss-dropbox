@@ -168,15 +168,15 @@ ul{
 /*layout*/
 .row{
     display: flex;
+    flex-basis: 100%;
     flex-wrap: wrap;
+    
 }
 
 .row.cols3{
     justify-content: space-between;
     gap: 30px;
-    flex-basis: 100%;  
 }
-
 .col33{
     flex-basis: calc((100% / 3) - (60px /3));
 }
@@ -375,4 +375,39 @@ ul{
 
 #operations h3{
     margin-bottom: 25px;
+}
+
+/*section-members*/
+#members *{
+    border: 1px dashed green;
+}
+#members{
+    margin-top: 125px;
+}
+
+#members .col33{
+    margin-top: 100px;
+    flex-basis: calc(100% / 3);
+    flex-grow: 1;
+}
+
+#members .cols2{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cols2 .col50{
+    justify-content: center;
+    min-height: 252px;
+    width: calc(100%/2);
+}
+
+.col50 .box-img{
+    height: 70%;
+    width: 70%;
+}
+
+.cols2 .col50, .col50 .box-img{
+    display: flex;
+    align-items: center;
 }
