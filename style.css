@@ -159,6 +159,11 @@ ul{
     background-color: yellow;
 }
 
+.bg-black{
+    background-color: #000;
+}
+
+
 .clr-black{
     color: #000;
 }
@@ -503,7 +508,6 @@ ul{
 }
 
 /*section-questions*/
-
 #questions{
     margin-top: 125px;
 }
@@ -522,7 +526,32 @@ ul{
 
 .quest-box:hover .p-quest{
     display: block;
+}
 
+/*footer*/
+footer{
+    margin-top: 125px;
+
+}
+
+footer *{
+    color: #fff;
+    border: 1px dashed green;
+
+}
+
+.page-ftr{
+    width: 100%;
+    min-height: 550px;
+}
+
+footer .row{
+    gap: 20px;
+}
+
+footer .col20{
+    width: calc((100% / 5) - (80px / 5));
+    min-height: 100px;
 }
 
 
