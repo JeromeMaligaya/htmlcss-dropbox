@@ -272,6 +272,7 @@ ul{
 .hdr-nav-left, .hdr-nav-right{
     gap: 15px;
     width: 35%;
+    height: 100%
     
 }
 
@@ -282,6 +283,7 @@ ul{
 .hdr-left-row-a, .hdr-right-row-a{
     width: 85%;
     gap: 25px;
+    height: 100%
 }
 
 .hdr-nav-left img{
@@ -293,6 +295,14 @@ ul{
     display: block;
     }
 
+.bord-hov{
+    height: 100%;
+    border-bottom: 3px solid #ff000000;
+}
+
+#header-bar .bord-hov:hover{
+    border-bottom: 3px solid #777;
+}
 
 
 /*header-content*/
