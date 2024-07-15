@@ -48,10 +48,6 @@ ul{
 }
 
 /*utlities-spacing*/
-.width100{
-    width: 100%;
-}
-
 .gap10{
     gap: 10px;
 }
@@ -84,9 +80,7 @@ ul{
 .mrg-b-xl{
     margin-bottom: 60px;
 }
-.border{
-    border: 1px solid #777;
-}
+
 
 /*utilities-position*/
 .flex{
@@ -163,7 +157,6 @@ ul{
     background-color: #000;
 }
 
-
 .clr-black{
     color: #000;
 }
@@ -213,6 +206,9 @@ ul{
 }
 
 /*borderline*/
+.border{
+    border: 1px solid #777;
+}
 .borderline{
     border: 1px solid;
 }
@@ -231,8 +227,6 @@ ul{
     color: #fff;
     width: 10%;
 }
-
-
 
 /*layout*/
 .row{
@@ -359,12 +353,16 @@ ul{
     border: 1px solid #000;
 }
 
-.card *{
+#bundles-prices *{
     font-size: 15px;
 }
 
-.card h2{
+#bundles-prices h2{
     font-size: 20px;
+}
+
+#bundles-prices .row.cols3{
+    margin-top: 50px;
 }
 
 .type-card{
@@ -378,24 +376,39 @@ ul{
     min-height:130px;
 }
 
-.container-card-prices ul li{
+#bundles-prices .plan-card > ul{
+    min-height: 185px;
+}
+
+.benefit-list > ul{
+    min-height: 300px;
+}
+
+
+#bundles-prices ul li{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 10px;
+    margin-bottom: 20px;
     
 }
 
+#bundles-prices h3, #bundles-prices ul, 
+#bundles-prices .btn, #bundles-prices a.underline,
+#bundles-prices .borderline-prices{
+    margin-bottom:30px;
+}
 
 .benefit-list>ul li i{
     color: blue;
 }
 
- .container-card-prices-xl .price-card{
+#bundles-prices .price-card{
    justify-content: space-between; 
    align-items: flex-start;
 }
 
- .container-card-prices-xl p{
+#bundles-prices p{
     width: 75%;
 }
 
@@ -537,7 +550,7 @@ footer{
 
 footer *{
     color: #fff;
-    border: 1px dashed green;
+   
 
 }
 
@@ -571,7 +584,7 @@ footer .col20 li{
     display: flex;
     align-items: center;
     padding: 40px 0;
-    gap: 5px;
+    gap: 7px;
 }
 
 .ftr-btm *{
