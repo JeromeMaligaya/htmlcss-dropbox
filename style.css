@@ -375,6 +375,7 @@ ul{
 
 .container-card-prices ul li{
     display: flex;
+    align-items: center;
     gap: 10px;
     
 }
@@ -498,6 +499,29 @@ ul{
     width: 100%;
     gap: 100px;
     padding: 125px 0;
+
+}
+
+/*section-questions*/
+
+#questions{
+    margin-top: 125px;
+}
+
+#questions .container-l >*{
+    margin-bottom:25px;
+}
+
+.question{
+    justify-content: space-between;
+}
+
+.p-quest{
+    display: none;
+}
+
+.quest-box:hover .p-quest{
+    display: block;
 
 }
 
