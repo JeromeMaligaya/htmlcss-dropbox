@@ -212,7 +212,7 @@ ul{
     border: 1px solid #000;
 }
 
-/**/
+/*borderline*/
 .borderline{
     border: 1px solid;
 }
@@ -229,7 +229,7 @@ ul{
 
 .borderline-footer{
     color: #fff;
-    width: 25%;
+    width: 10%;
 }
 
 
@@ -522,6 +522,7 @@ ul{
 
 .p-quest{
     display: none;
+    margin-top: 30px;
 }
 
 .quest-box:hover .p-quest{
@@ -542,16 +543,37 @@ footer *{
 
 .page-ftr{
     width: 100%;
-    min-height: 550px;
+    padding-top: 80px;
+
 }
 
 footer .row{
     gap: 20px;
+    margin-bottom: 80px;
 }
 
 footer .col20{
     width: calc((100% / 5) - (80px / 5));
-    min-height: 100px;
+
 }
 
+footer .col20 h3{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
 
+footer .col20 li{
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.ftr-btm{
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+    gap: 5px;
+}
+
+.ftr-btm *{
+    font-size: 12px;
+}
